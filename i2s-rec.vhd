@@ -19,17 +19,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 -- SSM2603 Codec on the zybo
--- Rec Mono (One Channel) Fs=48Khz, MCLK = 1.152MHz (48000Hz * 24bits = 1.152Mhz)
+-- Rec Mono (One Channel) Fs=48Khz, BCLK = 1.152MHz (48000Hz * 24bits = 1.152Mhz)
 
 entity i2s_rec is
 	generic(
